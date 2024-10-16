@@ -15,3 +15,5 @@ $wpdb->query("DROP TABLE IF EXISTS $emailTable");
 
 
 $wpdb->query("DROP TABLE IF EXISTS $historyTable");
+
+// end
