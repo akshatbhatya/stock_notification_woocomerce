@@ -1,0 +1,76 @@
+/* Container styles */
+.custom-container {
+
+  background: rgb(186 187 187 / 10%);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(1.5px);
+  -webkit-backdrop-filter: blur(1.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+/* Alert styles */
+.custom-alert {
+  font-size: 1.2rem;
+  background-color: #fff3cd;
+  border-color: #ffeeba;
+  color: #856404;
+}
+
+/* Heading styles */
+.custom-heading {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
+  color: #ff7a01;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Table styles */
+.custom-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 10px;
+  margin-bottom: 1.5rem;
+  color: #212529;
+}
+
+/* Table header styles */
+.custom-table-header {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+}
+
+/* Table row styles */
+.custom-table-row {
+  color: white;
+  background-color:  #001925;
+  border-radius: 5px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover effects on rows */
+.custom-table-row:hover {
+  background-color: rgb(33 37 41);
+  transform: translateY(-2px);
+  transition: all 0.3s ease;
+}
+
+/* Table cell spacing */
+.custom-table th, .custom-table td {
+  padding: 12px;
+  vertical-align: middle;
+  text-align: center;
+}
+
+/* Table row border */
+.custom-table-row td, .custom-table-row th {
+  border: 1px solid #dee2e6;
+}
+
+

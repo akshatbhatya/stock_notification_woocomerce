@@ -1,0 +1,68 @@
+/* WooCommerce Container styles */
+.woocommerce-container {
+  background: rgb(186 187 187 / 10%);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(1.5px);
+  -webkit-backdrop-filter: blur(1.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+/* WooCommerce Heading styles */
+.woocommerce-heading {
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  color: #ff7a01;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+}
+
+/* WooCommerce Table styles */
+.woocommerce-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 10px;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+/* WooCommerce Table header styles */
+.woocommerce-table-header {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+}
+
+/* WooCommerce Table row styles */
+.woocommerce-table-row {
+  background-color: #001925;
+  color: white;
+  border-radius: 5px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* WooCommerce Hover effects on rows */
+.woocommerce-table-row:hover {
+  background-color: rgb(33 37 41);
+  transform: translateY(-2px);
+  transition: all 0.3s ease;
+}
+
+/* WooCommerce Table cell spacing */
+.woocommerce-table th,
+.woocommerce-table td {
+  padding: 12px;
+  vertical-align: middle;
+  text-align: center;
+}
+
+/* WooCommerce Table row border */
+.woocommerce-table-row td,
+.woocommerce-table-row th {
+  border: 1px solid #ccc;
+}

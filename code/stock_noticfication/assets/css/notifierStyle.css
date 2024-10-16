@@ -1,0 +1,135 @@
+/* General Styles */
+.NotificationEmail {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.submit-button {
+  width: 100%;
+  padding: 10px;
+  background-color: blue;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: darkblue;
+}
+
+/* Modal Styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  overflow: auto;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.modal.show {
+  display: block;
+  opacity: 1;
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 10% auto;
+  padding: 20px;
+  border-radius: 5px;
+  width: 90%;
+  max-width: 500px;
+  /* Limit the max width for larger screens */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transform: translateY(-50px);
+  animation: modalFadeIn 0.4s forwards;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  cursor: pointer;
+}
+
+/* Keyframe animation for modal content */
+@keyframes modalFadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 600px) {
+  .modal-content {
+    width: 95%;
+    /* More width for smaller screens */
+    margin: 20% auto;
+  }
+
+  .submit-button {
+    padding: 12px;
+  }
+}
+
+
+.custom-loader {
+  z-index: 9999;
+  background: #00000078;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.loader {
+  border: 8px solid #F3F3F3;
+  border-top: 8px solid #3498DB;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  max-width: 50px;
+  min-height: 50px;
+  max-height: 50px;
+  -webkit-animation: spin 1s linear infinite;
+  animation: spin 1s linear infinite;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 99999;
+}
+.custom-loader.hide {
+  display: none;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
